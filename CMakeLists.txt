@@ -9,7 +9,8 @@ add_compile_options(-fPIC)
 
 set(LV_LVGL_H_INCLUDE_SIMPLE true CACHE BOOL "")
 
-set(INC_INSTALL_DIR "include/" CACHE STRING "where to install headers relative to prefix"     )
+set(LIB_INSTALL_DIR "lib64"    CACHE STRING "where to install lib relative to prefix")
+set(INC_INSTALL_DIR "include/" CACHE STRING "where to install headers relative to prefix")
 
 include_directories(.)
 add_subdirectory(lvgl)

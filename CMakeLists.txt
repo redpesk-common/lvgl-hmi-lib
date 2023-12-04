@@ -9,6 +9,8 @@ add_compile_options(-fPIC)
 
 set(LV_LVGL_H_INCLUDE_SIMPLE true CACHE BOOL "")
 
+set(INC_INSTALL_DIR "include/" CACHE STRING "where to install headers relative to prefix"     )
+
 include_directories(.)
 add_subdirectory(lvgl)
 add_subdirectory(lv_drivers)

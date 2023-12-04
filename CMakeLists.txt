@@ -5,6 +5,7 @@ project(lv-evse-hmi)
 include(GNUInstallDirs)
 
 set(BUILD_SHARED_LIBS OFF)
+add_compile_options(-fPIC)
 
 set(LV_LVGL_H_INCLUDE_SIMPLE true CACHE BOOL "")
 

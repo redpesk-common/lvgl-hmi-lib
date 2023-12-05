@@ -576,9 +576,9 @@ extern uint32_t custom_tick_get(void);
 /*File system interfaces for common APIs */
 
 /*API for fopen, fread, etc*/
-#define LV_USE_FS_STDIO 0
+#define LV_USE_FS_STDIO 1
 #if LV_USE_FS_STDIO
-    #define LV_FS_STDIO_LETTER '\0'     /*Set an upper cased letter on which the drive will accessible (e.g. 'A')*/
+    #define LV_FS_STDIO_LETTER 'L'     /*Set an upper cased letter on which the drive will accessible (e.g. 'A')*/
     #define LV_FS_STDIO_PATH ""         /*Set the working directory. File/directory paths will be appended to it.*/
     #define LV_FS_STDIO_CACHE_SIZE  0   /*>0 to cache this number of bytes in lv_fs_read()*/
 #endif
@@ -607,7 +607,7 @@ extern uint32_t custom_tick_get(void);
 #endif
 
 /*PNG decoder library*/
-#define LV_USE_PNG 0
+#define LV_USE_PNG 1
 
 /*BMP decoder library*/
 #define LV_USE_BMP 0

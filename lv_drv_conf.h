@@ -1,6 +1,6 @@
 /**
  * @file lv_drv_conf.h
- * Configuration file for v8.2.0
+ * Configuration file for v8.3.0
  */
 
 /*
@@ -421,7 +421,7 @@
  * Touchscreen, mouse/touchpad or keyboard as libinput interface (for Linux based systems)
  *------------------------------------------------*/
 #ifndef USE_LIBINPUT
-#  define USE_LIBINPUT           r0
+#  define USE_LIBINPUT           0
 #endif
 
 #ifndef USE_BSD_LIBINPUT
@@ -431,7 +431,7 @@
 #if USE_LIBINPUT || USE_BSD_LIBINPUT
 /*If only a single device of the same type is connected, you can also auto detect it, e.g.:
  *#define LIBINPUT_NAME   libinput_find_dev(LIBINPUT_CAPABILITY_TOUCH, false)*/
-#  define LIBINPUT_NAME   "/dev/input/mouse0"        /*You can use the "evtest" Linux tool to get the list of devices and test them*/
+#  define LIBINPUT_NAME   "/dev/input/event0"        /*You can use the "evtest" Linux tool to get the list of devices and test them*/
 
 #endif  /*USE_LIBINPUT || USE_BSD_LIBINPUT*/
 

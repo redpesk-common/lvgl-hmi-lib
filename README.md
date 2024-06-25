@@ -1,10 +1,10 @@
-# Pre-build config for Tux-evse lvgl lib
+# Pre-build config for lvgl hmi lib
 
-## Clone tux-evse-lvgl + (lvgl-lib + lvgl-drivers submodules)
+## Clone lvgl-hmi-lib + (lvgl-lib + lvgl-drivers submodules)
 
 ```bash
-git clone git@github.com:tux-evse/lv-evse-hmi-lib.git
-cd lv-evse-hmi-lib
+git clone https://github.com/redpesk-common/lvgl-hmi-lib
+cd lvgl-hmi-lib
 git submodule init
 git submodule update
 ```
